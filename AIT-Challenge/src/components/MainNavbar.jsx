@@ -1,3 +1,4 @@
+import { useAuth0 } from "@auth0/auth0-react";
 import React from "react";
 import {
   Navbar,
@@ -7,6 +8,8 @@ import {
   Button,
   Form,
 } from "react-bootstrap";
+import LoginButton from "./LoginButton";
+import { LogoutButton } from "./LogoutButton";
 
 const MainNavbar = () => {
   return (
@@ -17,7 +20,7 @@ const MainNavbar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
+              <Nav.Link href="/trending">Trending</Nav.Link>
               <Nav.Link href="#link">Link</Nav.Link>
               <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -35,7 +38,8 @@ const MainNavbar = () => {
               <Button>Upload</Button>
             </Nav>
           </Navbar.Collapse>
-          <Button variant="dark">Login</Button>
+          <LoginButton />
+          <LogoutButton />
         </Container>
       </Navbar>
       <Form className="d-flex">
