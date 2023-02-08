@@ -27,7 +27,7 @@ const TrendingGiphy = () => {
     });
   };
 
-  return <div>{renderGifs()}</div>;
+  return <div style={{ display: "flex" }}>{renderGifs()}</div>;
 };
 
 export default TrendingGiphy;

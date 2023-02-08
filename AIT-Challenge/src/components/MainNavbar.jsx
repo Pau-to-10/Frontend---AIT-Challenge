@@ -16,24 +16,17 @@ const MainNavbar = () => {
     <>
       <Navbar bg="light" expand="lg">
         <Container>
-          <Navbar.Brand href="/">Take your GIF</Navbar.Brand>
+          <Navbar.Brand href="/">HOME</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/trending">Trending</Nav.Link>
-              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="/sports">Sports</Nav.Link>
+              <Nav.Link href="/animals">Animals</Nav.Link>
+              <Nav.Link href="/gaming">Gaming</Nav.Link>
+              <Nav.Link href="/music">Music</Nav.Link>
               <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
+                <NavDropdown.Item href="/memes">Memes</NavDropdown.Item>
+                <NavDropdown.Item href="/stickers">Stickers</NavDropdown.Item>
               </NavDropdown>
               <Button>Upload</Button>
             </Nav>
