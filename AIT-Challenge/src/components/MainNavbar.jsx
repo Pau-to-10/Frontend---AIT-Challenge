@@ -28,7 +28,10 @@ const MainNavbar = () => {
                 <NavDropdown.Item href="/memes">Memes</NavDropdown.Item>
                 <NavDropdown.Item href="/stickers">Stickers</NavDropdown.Item>
               </NavDropdown>
-              <Button>Upload</Button>
+
+              <Nav.Link href="/upload">
+                <Button>Upload</Button>
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
           <LoginButton />
